@@ -1,0 +1,136 @@
+.letter-tops {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -25px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.5rem;
+}
+.cont-emial > h1 {
+  font-size: 35px;
+  color: black;
+  margin-left: 90px;
+  font-family: "Varela Round", sans-serif;
+}
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh; /* Ajusta la altura al 100% del viewport */
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.container-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px; /* Espacio entre las filas */
+  text-align: center; /* Centra el contenido en el contenedor */
+}
+
+.input-group {
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* Dos columnas para los dos primeros inputs */
+  grid-gap: 15px; /* Espacio entre los dos primeros inputs */
+}
+
+.item {
+  width: 92%; /* Ancho al 100% del contenedor */
+  height: 28px; /* Altura de 40px */
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 8px;
+  font-family: "Nunito", sans-serif;
+}
+
+.msg {
+  margin: 5px 0;
+  padding: 5px;
+  height: 100px;
+  border-radius: 8px;
+}
+
+.bottom-section {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  margin-left: -265px; /* Espacio a la derecha del botón */
+  width: 105px;
+  height: 35px;
+  border-radius: 25px;
+  margin-top: 7px;
+}
+/* Puedes ajustar el ancho y la altura según tus preferencias */
+.item:focus,
+.msg:focus {
+  border-color: #0466c8;
+  outline: none;
+  background-color: #0466c8;
+  color: white;
+}
+.msg::placeholder {
+  color: black;
+}
+
+/* Cuando el input está enfocado, el marcador de posición es blanco */
+.msg:focus::placeholder,
+.item:focus::placeholder {
+  color: white;
+}
+
+/* Estilos para campos de entrada normales */
+.item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para campos de entrada inválidos */
+.item.invalid {
+  border: 1px solid red;
+}
+
+/* Estilo para el mensaje de error */
+.error-message {
+  color: red;
+  margin-top: 5px;
+  font-family: "Nunito", sans-serif;
+}
+
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: -20px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+@media (max-width: 1182px) {
+  .cont-emial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cont-emial h1 {
+    left: 0; /* Ajusta la posición izquierda a 0 para centrar horizontalmente */
+    margin-top: 20px; /* Espacio superior adicional para centrar verticalmente */
+    margin-left: 10px;
+  }
+}

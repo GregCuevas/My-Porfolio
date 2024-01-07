@@ -1,0 +1,161 @@
+.container_information > h1 {
+  font-size: 35px;
+  color: black;
+  margin-left: 90px;
+  font-family: "Varela Round", sans-serif;
+}
+.container_redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contred {
+  margin-left: 650px;
+  margin-top: -90px;
+}
+.container_redes ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-align: center;
+}
+.container_redes ul li {
+  margin-left: 10px;
+}
+.container_redes li a {
+  color: black;
+}
+.bold {
+  color: black;
+  font-weight: bold;
+}
+.text {
+  display: inline-block;
+  margin-left: 90px;
+  margin-top: 70px;
+  font-family: "Varela Round", sans-serif;
+}
+.text > p {
+  font-size: 17px;
+  font-family: "Nunito", sans-serif;
+}
+.text h2 {
+  font-size: 40px;
+}
+
+.bold {
+  color: #0466c8;
+}
+.red-tex {
+  color: #0466c8;
+}
+.verify {
+  position: relative;
+  top: 25px;
+}
+.text img {
+  background-color: #0466c8;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  transform-origin: center;
+  animation: girar 10s linear infinite;
+}
+
+@keyframes girar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.profile {
+  display: inline-block;
+  width: 310px;
+  height: 310px;
+  margin-left: 765px;
+  margin-top: -380px;
+}
+.verify:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1182px) {
+  .container_redes > .contred {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    margin-left: 15px;
+  }
+  .container_information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Estilo específico para el encabezado */
+  .container_information > h1 {
+    font-size: 35px;
+    color: black;
+    font-family: "Varela Round", sans-serif;
+    margin-left: 0; /* Ajusta el margen para centrar */
+    text-align: center; /* Ajusta la alineación del texto */
+  }
+
+  /* Estilo específico para la sección "text" */
+  .text {
+    margin-left: 0; /* Ajusta el margen para centrar */
+    text-align: center; /* Ajusta la alineación del texto */
+    margin-top: -10px; /* Ajusta el margen superior */
+    font-family: "Varela Round", sans-serif;
+  }
+
+  /* Estilo específico para los párrafos en "text" */
+  .text > p {
+    font-size: 0.9rem;
+    font-family: "Nunito", sans-serif;
+  }
+
+  /* Estilo específico para el título en "text" */
+  .text h2 {
+    font-size: 40px;
+  }
+
+  /* Estilo específico para el texto en negrita */
+  .bold {
+    color: #0466c8;
+  }
+
+  /* Estilo específico para el texto en rojo */
+  .red-tex {
+    color: #0466c8;
+  }
+
+  /* Estilo para la imagen en "text" */
+  .text img {
+    background-color: #0466c8;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    transform-origin: center;
+    animation: girar 10s linear infinite;
+    margin-top: 20px; /* Ajusta el margen superior */
+  }
+
+  /* Estilo para los enlaces en "container_redes" */
+  .container_redes ul li a {
+    color: black;
+  }
+
+  /* Estilo para los elementos en negrita */
+  .bold {
+    font-weight: bold;
+  }
+
+  .profile {
+    display: none;
+  }
+}

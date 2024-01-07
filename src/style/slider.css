@@ -1,0 +1,205 @@
+.photo {
+  height: 95px;
+  width: 95px;
+}
+.slider-img {
+  position: relative;
+  right: -110px;
+  top: 47px;
+}
+.slider-card h2 {
+  font-size: 1rem;
+  position: relative;
+  top: 30px;
+  right: -100px;
+  font-family: "Nunito", sans-serif;
+}
+.deale {
+  font-size: 1rem;
+  position: relative;
+  top: 20px;
+  right: -137px;
+  font-family: "Nunito", sans-serif;
+}
+.paraph {
+  width: 55%;
+  position: relative;
+  top: -85px;
+  right: -320px;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.89rem;
+}
+.text-container .p-res {
+  font-family: "Nunito", sans-serif;
+  font-size: 0.89rem;
+  position: absolute;
+  top: 50%; /* Centra verticalmente en relación al contenedor padre */
+  left: 60%; /* Centra horizontalmente en relación al contenedor padre */
+  transform: translate(
+    -55%,
+    -40%
+  ); /* Centra exactamente en el centro del contenedor padre */
+}
+.text-ana .p-ana {
+  font-family: "Nunito", sans-serif;
+  font-size: 0.89rem;
+  position: absolute;
+  top: 50%; /* Centra verticalmente en relación al contenedor padre */
+  left: 60%; /* Centra horizontalmente en relación al contenedor padre */
+  transform: translate(
+    -55%,
+    -40%
+  ); /* Centra exactamente en el centro del contenedor padre */
+}
+.text-hielo .p-hielo {
+  font-family: "Nunito", sans-serif;
+  font-size: 0.89rem;
+  position: absolute;
+  top: 50%; /* Centra verticalmente en relación al contenedor padre */
+  left: 60%; /* Centra horizontalmente en relación al contenedor padre */
+  transform: translate(
+    -55%,
+    -40%
+  ); /* Centra exactamente en el centro del contenedor padre */
+}
+.divisor {
+  width: 1px;
+  height: 120px;
+  background-color: black;
+  position: fixed;
+  left: 275px;
+  top: 60px;
+}
+.letter-top h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 2rem;
+}
+.deales {
+  font-size: 1rem;
+  position: relative;
+  top: 20px;
+  right: -117px;
+  font-family: "Nunito", sans-serif;
+}
+.slider-card .ana {
+  font-size: 1rem;
+  position: relative;
+  top: 30px;
+  right: -115px;
+  font-family: "Nunito", sans-serif;
+}
+.slider-card .ice {
+  font-size: 1rem;
+  position: relative;
+  top: 30px;
+  right: -118px;
+  font-family: "Nunito", sans-serif;
+}
+.deal {
+  font-size: 1rem;
+  position: relative;
+  top: 20px;
+  right: -125px;
+  font-family: "Nunito", sans-serif;
+}
+@media (max-width: 921px) {
+  .divisor {
+    display: none;
+  }
+
+  .slider-img {
+    display: grid;
+    place-items: center;
+    height: 10vh;
+    margin-left: -220px;
+    margin-top: -50px;
+  }
+
+  .text-container > h2 {
+    display: grid;
+    place-items: center;
+    height: 1vh;
+    margin-left: -205px;
+    margin-top: 60px;
+  }
+  .text-container > .deale {
+    display: grid;
+    place-items: center;
+    height: 1vh;
+    margin-right: 280px;
+    margin-top: 30px;
+  }
+  .text-ana > h2 {
+    display: grid;
+    place-items: center;
+    height: 1vh;
+    margin-left: -240px;
+    margin-top: 60px;
+  }
+  .text-ana > .deales {
+    display: grid;
+    place-items: center;
+    height: 1vh;
+    margin-left: -240px;
+    margin-top: 30px;
+  }
+  .text-container .p-res {
+    font-family: "Nunito", sans-serif;
+    font-size: 0.97rem;
+    position: static; /* Restablece la posición a estática */
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 64%; /* Opcional: ocupa todo el ancho del contenedor */
+    margin: 40px auto; /* Centra horizontalmente */
+    text-align: center;
+  }
+  .text-ana .p-ana {
+    font-family: "Nunito", sans-serif;
+    font-size: 0.97rem;
+    position: static; /* Restablece la posición a estática */
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 64%; /* Opcional: ocupa todo el ancho del contenedor */
+    margin: 40px auto; /* Centra horizontalmente */
+    text-align: center;
+  }
+  .text-hielo > h2 {
+    display: grid;
+    place-items: center;
+    height: 1vh;
+    margin-left: -240px;
+    margin-top: 60px;
+  }
+  .text-hielo .deal {
+    display: grid;
+    place-items: center;
+    height: 1vh;
+    margin-left: -257px;
+    margin-top: 30px;
+  }
+  .text-hielo .p-hielo {
+    font-family: "Nunito", sans-serif;
+    font-size: 0.97rem;
+    position: static; /* Restablece la posición a estática */
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 65%; /* Opcional: ocupa todo el ancho del contenedor */
+    margin: 40px auto; /* Centra horizontalmente */
+    text-align: center;
+  }
+  .letter-top h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -70px;
+    font-family: "Varela Round", sans-serif;
+    font-size: 2rem;
+  }
+}
